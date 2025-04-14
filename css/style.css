@@ -43,7 +43,7 @@ body {
    height: 320px;
    margin-bottom: 10px;
 
-   border: 1px solid rgb(194, 194, 194);
+   border: 0px solid rgb(194, 194, 194);
    border-radius: 5px;
    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   }
@@ -58,4 +58,10 @@ body {
 
   .contacts p:last-child {
     border-left: 3px solid rgb(235, 48, 48);
+  }
+
+  .license {
+    font-size: 9px;
+    text-align: justify;
+    color: rgb(120, 120, 1);
   }
