@@ -1,11 +1,52 @@
-body{
-    background-color: #f0f0f0;
-}
-
-content{
-    width: 800px;
+body {
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  content {
+    width: 420px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 18px;
-}
+    gap: 20px;
+  }
+  
+  /* ⬛ Для наочності роботи з блоками */
+  div {
+    border: 1px solid darkgray;
+  }
+  
+  .title {
+    background: rgb(235, 48, 48);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 4px;
+  }
+  
+  .items {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  }
