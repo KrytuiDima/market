@@ -6,17 +6,15 @@ body {
   }
   
   content {
-    width: 420px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
   }
   
-  /* ⬛ Для наочності роботи з блоками */
   div {
     display: block;
-    border: 1px solid darkgray;
   }
   
   .title {
@@ -29,26 +27,85 @@ body {
     font-size: 28px;
     text-align: center;
     font-weight: bold;
-    letter-spacing: Jpx;
+    letter-spacing: 1px;
   }
   
   .items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
   }
   
   .item {
-   width: 200px;
-   height: 320px;
-   margin-bottom: 10px;
-
-   border: 0px solid rgb(194, 194, 194);
-   border-radius: 5px;
-   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 420px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  contacts.p {
+  .item img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .item-details {
+    text-align: right;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    font-size: 20px;
+    
+  }
+
+  .price-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid darkgray;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+  }
+
+  .current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .discount {
+    background-color: rgb(235, 48, 48);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid darkgray;
+  }
+
+  .discount span {
+    font-size: 18px;
+  }
+
+  .contacts p {
     margin: 3px;
   }
 
@@ -58,10 +115,17 @@ body {
 
   .contacts p:last-child {
     border-left: 3px solid rgb(235, 48, 48);
+    padding-left: 5px;
   }
 
   .license {
     font-size: 9px;
     text-align: justify;
-    color: rgb(120, 120, 1);
+    color: rgb(120, 120, 120);
   }
+
+  .item img {
+    width: 170px;
+    height: auto;
+    margin: 10px 0;
+}
